@@ -24,8 +24,9 @@ def merge_sort(arr):
 def merge(left, right):
     # leftList, rightList는 이미 정렬이 되어있다.
     mergedList = []
+    total_len = len(left) + len(right)
 
-    while len(mergedList) < len(left) + len(right):
+    while len(mergedList) < total_len:
         if len(left) > 0 and len(right) > 0 : 
             # left & right 모두 하나 이상의 값이 남아있을때는 비교
             if left[0] <= right[0]:
